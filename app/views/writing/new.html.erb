@@ -1,0 +1,18 @@
+<h1>Do some writing, I'll keep track of your words</h1>
+
+<h2>So you can find it later, though, also add a title</h2>
+
+<input type="text" />
+<form action="/writing/save" method="POST">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <div class="center-parent">
+    <div class="center">
+        <span>Title: </span>
+        <input type="text" name="title" />
+    </div>
+    <div class="center">
+        <span>Body: </span><textarea name="body"></textarea>
+    </div>
+    </div>
+    <input type="submit" />
+</form>
